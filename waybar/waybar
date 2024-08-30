@@ -1,0 +1,133 @@
+{
+	"layer": "top",
+	"height": 40,
+	
+	"modules-left": [
+		"clock",
+		"hyprland/workspaces",
+		"tray",
+	],
+
+	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		
+		"cpu",
+		"memory",
+		"temperature",
+		"upower",
+
+		"bluetooth",
+		"network",
+
+		"group/group-power",
+    ],
+
+	"pulseaudio": {
+		"format": "{icon}{volume}%",
+		"scroll-step": 1,
+		"on-click": "pavucontrol",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", ""]
+    		}	
+	},
+
+	"backlight": {
+		"format": "{icon}",
+		"scroll-step": 1,
+		"format-icons": ["", ""]
+	},
+
+	"cpu": {
+		"format": "{usage}%",
+		"tooltip": false
+	},
+
+	"memory": {
+		"format": "󰵆{}%"
+	},
+
+	"temperature": {
+		"critical-threshold": 80,
+		"format": "{icon}  {temperatureC}°C",
+		"format-icons": ["", "", ""]
+	},
+
+	"network": {
+		"format-wifi": "",
+		"format-ethernet": "",
+		"tooltip-format": "",
+		"format-linked": "",
+		"format-disconnected": "󰤮"
+	},
+
+	"bluetooth": {
+		"format": "󰂯",
+		"format-connected": "{device_alias}",
+		"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"active": "",
+			"default": ""
+		},
+		"sort-by-number": true
+	},
+
+	"tray": {
+		"spacing": 14
+	},
+
+	"group/group-power": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "drawer",
+			"transition-left-to-right": false,
+		},
+		"modules": [
+			"custom/power",
+			"custom/quit",
+			"custom/lock",
+			"custom/reboot",
+		]
+	},
+
+	"custom/quit": {
+		"format": "󰗼",
+		"tooltip": true,
+		"tooltip-format": "Logout",
+		"on-click": "hyprctl dispatch exit"
+	},
+
+	"custom/lock": {
+		"format": "󰍁",
+		"tooltip-format": "Lock",
+		"on-click": "hyprlock"
+	},
+
+	"custom/reboot": {
+		"format": "󰜉",
+		"tooltip-format": "Reboot",
+		"on-click": "reboot"
+	},
+
+	"custom/power": {
+		"format": "",
+		"tooltip-format": "Shutdown",
+		"on-click": "shutdown now"
+	},
+}

@@ -1,0 +1,88 @@
+window#waybar {
+	background-color: rgba(39, 39, 42, 0.7);
+}
+
+.modules-right {
+	margin: 7px 0 7px 0;
+}
+
+.modules-left {
+	margin: 7px 0 7px 0;
+}
+
+#pulseaudio,
+#backlight,
+#cpu, 
+#memory, 
+#temperature,
+#upower,
+#network,
+#bluetooth,
+#workspaces,
+#clock {
+	color: rgb(24, 24, 27);
+	font-weight: 800;
+	border-radius: 10px;
+	background-color: rgb(250, 250, 250);
+	margin: 0 5px 0 5px;
+	padding: 0 10px;
+}
+
+#backlight {
+	padding-right: 14px;
+	margin: 0 20px 0 0;
+}
+
+#memory {
+	margin: 0 20px 0 0;
+}
+
+#upower {
+	margin: 0 20px 0 0;
+}
+
+#bluetooth {
+	margin: 0;
+	font-size: 12pt;
+	font-weight: 800;
+}
+
+#network {
+	font-size: 10pt;
+	padding-right: 16px;
+	margin-right: 10px;
+}
+
+#clock {
+	margin-left: 20px;
+}
+
+#workspaces {
+	background-color: rgb(250, 250, 250);
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+#workspaces button {
+	color: rgb(24, 24, 27);
+	font-size: 16pt;
+	padding: 0 1px;
+}
+
+#tray {
+	margin: 0 5px 0 5px;
+	padding: 0 10px;
+}
+
+#group-power {
+  color: rgb(250, 250, 250);
+  margin-right: 10px;
+}
+
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+  font-weight: 600;
+  padding: 0 10px;
+}
