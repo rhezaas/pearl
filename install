@@ -16,3 +16,53 @@ ___  ___                  _ _       _     _
                                __/ |          
                               |___/                    
 EOF
+
+echo
+echo "Welcome To Moonlight Hyprland Dark Theme Installer....."
+echo
+
+echo "Installing Required Dependencies......................."
+
+# Install wofi if not exists
+if pacman -Q wofi &> /dev/null; then
+    echo "|- wofi is already installed..........................."
+else
+    echo "|- installing wofi....................................."
+
+    if sudo pacman -S --noconfirm --needed wofi; then
+        echo "|- wofi installed......................................"
+    fi
+fi
+
+# Install hyprpaper if not exists
+if pacman -Q hyprpaper &> /dev/null; then
+    echo "|- hyprpaper is already installed......................"
+else
+    echo "|- installing hyprpaper................................"
+
+    if sudo pacman -S --noconfirm --needed hyprpaper; then
+        echo "|- hyprpaper installed................................."
+    fi
+fi
+
+# Install waybar if not exists
+if pacman -Q waybar &> /dev/null; then
+    echo "|- waybar is already installed........................."
+else
+    echo "|- installing waybar..................................."
+
+    if sudo pacman -S --noconfirm --needed waybar; then
+        echo "|- waybar installed...................................."
+    fi
+fi
+
+# Install openrgb if not exists
+if pacman -Q openrgb &> /dev/null; then
+    echo "|- openrgb is already installed........................"
+else
+    echo "|- installing openrgb.................................."
+
+    if sudo pacman -S --noconfirm --needed openrgb; then
+        echo "|- openrgb installed..................................."
+    fi
+fi
