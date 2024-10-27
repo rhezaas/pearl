@@ -1,0 +1,43 @@
+{
+    
+    // Window
+    "window.zoomLevel": -0.7,
+    "window.menuBarVisibility": "toggle",
+    "window.customTitleBarVisibility": "never",
+    
+    // Workbench
+    "workbench.tree.indent": 12,
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Plastic",
+    "workbench.iconTheme": "vs-minimal",
+    // Explorer
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    
+    // Editor
+    "breadcrumbs.enabled": false,
+    "editor.padding.top": 12,
+    "editor.padding.bottom": 12,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
+    "editor.inlineSuggest.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
+    
+    // Terminal
+    "terminal.integrated.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-li"
+            ]
+        },
+    },
+    
+    // Debugger
+    "debug.console.fontSize": 15,
+    "debug.console.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
+    
+    // SCM
+    "scm.inputFontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
+}
