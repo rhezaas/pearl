@@ -1,0 +1,130 @@
+window#waybar {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.modules-right {
+	margin: 7px 0 7px 0;
+}
+
+.modules-left {
+	margin: 7px 0 7px 0;
+}
+
+#backlight,
+#temperature,
+#upower,
+#network,
+#workspaces,
+#battery,
+#clock {
+	color: rgb(24, 24, 27);
+	font-weight: 800;
+	border-radius: 5px;
+	background-color: rgb(250, 250, 250);
+	margin: 0 8px 0 0;
+	padding: 6px 12px;
+}
+
+#workspaces {
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
+#workspaces button {
+	color: rgb(24, 24, 27);
+	font-size: 16pt;
+	padding: 0 1px;
+}
+
+#tray {
+	margin: 0 5px 0 5px;
+	padding: 0 10px;
+}
+
+#pulseaudio.icon,
+#pulseaudio.value {
+	color: rgb(24, 24, 27);
+	font-weight: 800;
+	background-color: rgb(250, 250, 250);
+}
+
+#pulseaudio.icon {
+	border-radius: 5px 0 0 5px;
+	padding: 6px 10px 6px 12px;
+}
+
+#pulseaudio.value {
+	border-radius: 0 5px 5px 0;
+	padding: 6px 12px 6px 0;
+	margin-right: 8px;
+}
+
+#backlight {
+	padding-right: 12px;
+	margin-right: 15px;
+}
+
+#cpu.icon,
+#cpu.value {
+	color: rgb(24, 24, 27);
+	font-weight: 800;
+	background-color: rgb(250, 250, 250);
+}
+
+#cpu.icon {
+	border-radius: 5px 0 0 5px;
+	padding: 6px 14px 6px 12px;
+}
+
+#cpu.value {
+	border-radius: 0 5px 5px 0;
+	padding: 6px 12px 6px 0;
+	margin-right: 8px;
+}
+
+#memory.icon,
+#memory.value {
+	color: rgb(24, 24, 27);
+	font-weight: 800;
+	background-color: rgb(250, 250, 250);
+}
+
+#memory.icon {
+	border-radius: 5px 0 0 5px;
+	padding: 6px 14px 6px 12px;
+}
+
+#memory.value {
+	border-radius: 0 5px 5px 0;
+	padding: 6px 12px 6px 0;
+	margin-right: 15px;
+}
+
+#battery {
+	margin: 0 15px 0 0;
+}
+
+#network {
+	font-size: 10pt;
+	padding-right: 12px;
+	margin-right: 10px;
+}
+
+#clock {
+	font-weight: 800;
+	margin-left: 20px;
+}
+
+#group-power {
+  color: rgb(250, 250, 250);
+  margin-right: 10px;
+}
+
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+  font-weight: 600;
+  padding: 0 10px;
+}

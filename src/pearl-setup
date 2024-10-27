@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Check if running as root. If root, script will exit
+if [[ $EUID -eq 0 ]]; then
+    echo "This script should not be executed as root! Exiting......."
+    exit 1
+fi
+
+cat << EOF
+ ███████████                               ████                                                 
+░░███░░░░░███                             ░░███                                                 
+ ░███    ░███  ██████   ██████   ████████  ░███                                                 
+ ░██████████  ███░░███ ░░░░░███ ░░███░░███ ░███                                                 
+ ░███░░░░░░  ░███████   ███████  ░███ ░░░  ░███                                                 
+ ░███        ░███░░░   ███░░███  ░███      ░███                                                 
+ █████       ░░██████ ░░████████ █████     █████                                                
+░░░░░         ░░░░░░   ░░░░░░░░ ░░░░░     ░░░░░                                                 
+                                                                                                
+                                                                                                
+                                                                                                
+ █████   ███   █████                    █████                                                   
+░░███   ░███  ░░███                    ░░███                                                    
+ ░███   ░███   ░███   ██████  ████████  ░███ █████  █████  ████████   ██████    ██████   ██████ 
+ ░███   ░███   ░███  ███░░███░░███░░███ ░███░░███  ███░░  ░░███░░███ ░░░░░███  ███░░███ ███░░███
+ ░░███  █████  ███  ░███ ░███ ░███ ░░░  ░██████░  ░░█████  ░███ ░███  ███████ ░███ ░░░ ░███████ 
+  ░░░█████░█████░   ░███ ░███ ░███      ░███░░███  ░░░░███ ░███ ░███ ███░░███ ░███  ███░███░░░  
+    ░░███ ░░███     ░░██████  █████     ████ █████ ██████  ░███████ ░░████████░░██████ ░░██████ 
+     ░░░   ░░░       ░░░░░░  ░░░░░     ░░░░ ░░░░░ ░░░░░░   ░███░░░   ░░░░░░░░  ░░░░░░   ░░░░░░  
+                                                           ░███                                 
+                                                           █████                                
+                                                          ░░░░░                                                 
+EOF
+
+
+echo
+echo "Pearl Workspace Installer....."
+echo
+
+# Ensure the .config directory exists
+mkdir -p "$HOME/.config"
+
+# Copy configuration files
+cp -a /opt/pearl-workspace/dotfiles/. "$HOME/.config/"
+echo "Configuration files have been installed to $HOME/.config"
+
+# Start Waybar
+killall waybar
+waybar -c ~/.config/waybar/waybar -s ~/.config/waybar/waybar.css &
+echo "Starting Waybar"
