@@ -1,7 +1,6 @@
-{
-    
+{   
     // Window
-    "window.zoomLevel": -0.7,
+    "window.zoomLevel": -0.5,
     "window.menuBarVisibility": "toggle",
     "window.customTitleBarVisibility": "never",
     
@@ -9,7 +8,8 @@
     "workbench.tree.indent": 12,
     "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Plastic",
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.iconTheme": "glyph.minimal",
+
     // Explorer
     "explorer.autoReveal": false,
     "explorer.confirmDragAndDrop": false,
