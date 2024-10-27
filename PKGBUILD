@@ -14,7 +14,7 @@ depends=(
     "ly" "hyprland" "wayland" "wofi" "nwg-look"
     
     # Fonts
-    "ttf-dejavu" "noto-fonts" "ttf-font-awesome"
+    "ttf-dejavu" "noto-fonts" "otf-font-awesome"
 
     # Support Apps
     "alacritty" "nemo"

@@ -21,7 +21,9 @@
 		"memory#value",
 
 		"temperature",
-		"battery",
+
+		"battery#icon",
+		"battery#value",
 
 		"network",
 
@@ -102,16 +104,25 @@
 		"format-disconnected": "󰤮 "
 	},
 
-	"battery": {
+	"battery#icon": {
 		"states": {
-				"warning": 30,
-				"critical": 15
+			"warning": 30,
+			"critical": 15
 		},
-		"format": "{icon} {capacity}%",
-		"format-charging": " {capacity}%",
-		"format-plugged": " {capacity}%",
-		"format-alt": "{time} {icon}",
+		"format": "{icon}",
+		"format-charging": "",
+		"format-plugged": "",
+		"format-alt": "{icon}",
 		"format-icons": ["", "", "", "", ""]
+	},
+	
+	"battery#value": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity}%",
+		"format-alt": "{time}"
 	},
 
 	"group/group-power": {
