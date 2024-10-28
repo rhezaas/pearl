@@ -13,13 +13,13 @@ depends=(
     
     # Desktop Environment
     "ly" "hyprland" "wayland" "wofi" "nwg-look"
-    "hyprlock", "hyprpaper"
+    "hyprlock", "hyprpaper" "dconf-editor"
     
     # Fonts
     "ttf-dejavu" "noto-fonts" "otf-font-awesome"
 
     # Support Apps
-    "alacritty" "nemo"
+    "alacritty" "nemo" "nemo-fileroller"
 )
 
 prepare() {
