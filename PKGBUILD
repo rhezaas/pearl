@@ -8,10 +8,12 @@ license=("custom")
 depends=(
     # Drivers
     "mesa" "pavucontrol" "brightnessctl"
-    "pulseaudio" "openrgb"
+    "pulseaudio" "openrgb" "wireguard-tools"
+    "systemd-resolvconf"
     
     # Desktop Environment
     "ly" "hyprland" "wayland" "wofi" "nwg-look"
+    "hyprlock", "hyprpaper"
     
     # Fonts
     "ttf-dejavu" "noto-fonts" "otf-font-awesome"
