@@ -7,9 +7,9 @@ arch=("x86_64")
 license=("custom")
 depends=(
     # Drivers
-    "mesa" "pavucontrol" "brightnessctl"
-    "pulseaudio" "openrgb" "wireguard-tools"
-    "systemd-resolvconf"
+    "mesa" "pavucontrol" "brightnessctl" "networkmanager"
+    "pipewire-pulse" "openrgb" "wireguard-tools"
+    "systemd-resolvconf" "bluez" "bluez-utils" "blueman"
     
     # Desktop Environment
     "ly" "hyprland" "wayland" "wofi" "nwg-look"
@@ -19,7 +19,7 @@ depends=(
     "ttf-dejavu" "noto-fonts" "otf-font-awesome"
 
     # Support Apps
-    "alacritty" "nemo" "nemo-fileroller"
+    "git" "alacritty" "nemo" "nemo-fileroller"
 )
 
 prepare() {
