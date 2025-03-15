@@ -9,13 +9,15 @@
     "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Plastic",
     "workbench.iconTheme": "glyph.minimal",
+    "workbench.startupEditor": "none",
 
     // Explorer
     "explorer.autoReveal": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     
     // Editor
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "editor.padding.top": 12,
     "editor.padding.bottom": 12,
     "editor.minimap.enabled": false,
@@ -43,7 +45,10 @@
     
     // SCM
     "scm.inputFontFamily": "'Dejavu Sans Mono', 'monospace', monospace",
-    "workbench.startupEditor": "none",
-    "explorer.confirmDelete": false,
     "security.workspace.trust.untrustedFiles": "open",
+
+    // Version Controll
+    "diffEditor.renderSideBySide": false,
+    "dart.updateImportsOnRename": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
 }

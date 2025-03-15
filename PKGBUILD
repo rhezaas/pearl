@@ -1,4 +1,3 @@
-# Maintainer: Your Name rheza.as@gmail.com
 pkgname=pearl-workspace
 pkgver=1.0.1
 pkgrel=1
